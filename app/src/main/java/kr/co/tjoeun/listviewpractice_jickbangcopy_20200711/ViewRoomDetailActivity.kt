@@ -2,6 +2,7 @@ package kr.co.tjoeun.listviewpractice_jickbangcopy_20200711
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import kr.co.tjoeun.listviewpractice_jickbangcopy_20200711.datas.Room
 
 class ViewRoomDetailActivity : BaseActivity() {
 
@@ -17,6 +18,11 @@ class ViewRoomDetailActivity : BaseActivity() {
     }
 
     override fun setValues() {
+
+        val roomData = intent.getSerializableExtra("room") as Room
+
+
+
 
     }
 

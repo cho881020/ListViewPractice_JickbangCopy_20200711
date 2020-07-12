@@ -1,10 +1,12 @@
 package kr.co.tjoeun.listviewpractice_jickbangcopy_20200711.datas
 
+import java.io.Serializable
+
 class Room(
     val price:Int,
     val address:String,
     val floor:Int,
-    val description:String) {
+    val description:String) : Serializable {
 
     fun getFormattedPrice() : String {
         if (this.price >= 10000) {
